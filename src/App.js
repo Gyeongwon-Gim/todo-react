@@ -1,12 +1,7 @@
 import Todo from "./components/Todo";
 import Form from "./components/Form";
-import FilterButton from "./components/FilterButton";
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
-
-
-// error roWkwmdsksek
-// FIXME:takeList 출력이 안됨. 비동기...?
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
@@ -46,13 +41,13 @@ function App(props) {
 
   return (
     <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
+      <h1>Check-List</h1>
       <Form addTask = {addTask} />
-      <div className="filters btn-group stack-exception">
-        {/* <FilterButton />
+      {/* <div className="filters btn-group stack-exception">
         <FilterButton />
-        <FilterButton /> */ }
-      </div>
+        <FilterButton />
+        <FilterButton /> 
+      </div> */}
       <h2 id="list-heading">{headingText}</h2>
       <ul
         role="list"
